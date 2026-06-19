@@ -3,21 +3,11 @@
     "totalTokens": 0,
     "reads": 0,
     "writes": 0,
-    "sessions": 1,
+    "sessions": 0,
     "anatomyHits": 0,
     "anatomyMisses": 0,
     "repeatedBlocked": 0,
     "savings": 0
   },
-  "sessions": [
-    {
-      "sessionID": "ses_12111b90fffe7pvSK5wAsVSS0e",
-      "date": "2026-06-19T08:10:18.254Z",
-      "tokens": 0,
-      "reads": 0,
-      "writes": 0,
-      "anatomyHits": 0,
-      "repeatedBlocked": 0
-    }
-  ]
+  "sessions": []
 }
