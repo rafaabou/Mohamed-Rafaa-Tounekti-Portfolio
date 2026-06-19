@@ -20,7 +20,7 @@ const i18n = {
     virt: "Virtualization · AI Tooling",
     languages: "Languages",
     langArabic: "Arabic", langArabicLevel: "Native",
-    langFrench: "French", langFrenchLevel: "Fluent",
+    langFrench: "French", langFrenchLevel: "Professional",
     langEnglish: "English", langEnglishLevel: "Professional",
     achievements: "Key Achievements",
     ach: [
@@ -150,7 +150,7 @@ const i18n = {
     virt: "Virtualisation · Outils IA",
     languages: "Langues",
     langArabic: "Arabe", langArabicLevel: "Natif",
-    langFrench: "Français", langFrenchLevel: "Courant",
+    langFrench: "Français", langFrenchLevel: "Professionnel",
     langEnglish: "Anglais", langEnglishLevel: "Professionnel",
     achievements: "Réalisations Clés",
     ach: [
@@ -280,7 +280,7 @@ const i18n = {
     virt: "المحاكاة الافتراضية · أدوات الذكاء الاصطناعي",
     languages: "اللغات",
     langArabic: "العربية", langArabicLevel: "لغة أم",
-    langFrench: "الفرنسية", langFrenchLevel: "متقدم",
+    langFrench: "الفرنسية", langFrenchLevel: "احترافي",
     langEnglish: "الإنجليزية", langEnglishLevel: "احترافي",
     achievements: "الإنجازات الرئيسية",
     ach: [
