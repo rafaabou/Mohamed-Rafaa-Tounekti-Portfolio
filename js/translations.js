@@ -1,0 +1,385 @@
+const i18n = {
+  en: {
+    lang: "EN",
+    badge: "DevOps & DevSecOps",
+    themeDark: "Dark", themeLight: "Light", downloadPdf: "PDF",
+    profile: "Profile",
+    profileText: "DevOps and DevSecOps engineer focused on building reliable CI/CD pipelines, securing Kubernetes clusters, and automating infrastructure at scale. I work across AWS, Linux systems, and containerized environments, with deep experience in GitLab CI/CD, Terraform, Ansible, and monitoring stacks.",
+    technicalSkills: "Technical Skills",
+    cloud: "Cloud", containers: "Containers & Orchestration", cicd: "CI/CD & GitOps", iac: "Infrastructure as Code",
+    security: "Security", monitoring: "Monitoring & Logging",
+    networking: "Networking · Scripting · DB · Storage",
+    virt: "Virtualization · AI Tooling",
+    languages: "Languages",
+    langArabic: "Arabic", langArabicLevel: "Native",
+    langFrench: "French", langFrenchLevel: "Fluent",
+    langEnglish: "English", langEnglishLevel: "Professional",
+    achievements: "Key Achievements",
+    ach: [
+      "Zero-trust security architecture on Kubernetes",
+      "Automated security scanning in CI/CD pipelines",
+      "GitOps with ArgoCD & Flux CD",
+      "High availability with PDB & autoscaling",
+      "Comprehensive monitoring & alerting stack"
+    ],
+    education: "Education",
+    edu: [
+      { title: "Bachelor's Degree", desc: "Information Technology (Computer Networks and Services)", meta: "I.S.E.T. · 2011 – 2014" },
+      { title: "High School Baccalaureate", desc: "Computer Science", meta: "2010 – 2011" }
+    ],
+    exp: [
+      {
+        role: "DevOps & DevSecOps Engineer",
+        company: "TUNISIE SOFTWARE FACTORY & BE-SOFTILYS",
+        period: "Jun 2025 – Oct 2024",
+        bullets: [
+          "Built GitLab CI/CD pipelines with Trivy, GitLeaks, and Semgrep scanning. Vulnerable images blocked before staging",
+          "Deployed zero-trust security across Kubernetes clusters with Istio mTLS, NetworkPolicies, and OPA Gatekeeper",
+          "Wired HashiCorp Vault into deployment workflows with automated secret rotation via External Secrets Operator",
+          "Setup Prometheus & Grafana dashboards with Alertmanager routing; MTTR dropped noticeably",
+          "Configured HPA and PodDisruptionBudgets to handle traffic spikes without dropping requests",
+          "Automated TLS certificate provisioning with Cert-Manager for all ingress resources",
+          "Ran end-to-end infrastructure validation tests after each provisioning cycle; caught drift before production",
+          "Enforced CI/CD security gates with vulnerability thresholds; pipelines failed when thresholds breached",
+          "Centralized vulnerability tracking in DefectDojo for remediation progress",
+          "Debugged Kubernetes runtime issues — CrashLoopBackOff, ImagePullBackOff, scheduling failures",
+          "Wrote runbooks and deployment docs; validation reports kept a paper trail",
+          "Pre-sales discussions with prospective clients on architecture options",
+          "Configured MCP servers for AI assistants to query Kubernetes, CI/CD, and monitoring data",
+          "Brought AI assistants into daily workflows for log analysis, incident triage, diagnostics",
+          "Used AI tools to speed Terraform & Ansible development; fewer configuration errors",
+          "Branch protection rules with required reviews and automated pipeline checks",
+          "Connected Alertmanager to Jira; alerts auto-generate service tickets",
+          "Supply chain security: SBOM generation, Cosign image signing, dependency tracking",
+          "Deployed Falco for runtime security on Kubernetes workloads"
+        ],
+        tech: ["Kubernetes", "Docker", "Helm", "ArgoCD", "GitLab CI/CD", "Terraform", "AWS", "GitLeaks", "Semgrep", "Trivy", "OPA Gatekeeper", "Kyverno", "DefectDojo", "Prometheus", "Grafana", "Istio", "HashiCorp Vault", "Harbor"]
+      },
+      {
+        role: "DevOps Engineer",
+        company: "DOPIFY SOFTWARE & TECHNOLOGIES",
+        period: "Apr 2024 – Jan 2024",
+        bullets: [
+          "Designed CI/CD pipelines for multiple teams with SAST, SCA, and secrets scanning in every build",
+          "Automated server provisioning across dev, staging, production with Ansible; eliminated manual drift",
+          "Set up Flux CD for GitOps-driven infrastructure; declarative, auditable environments",
+          "Deployed Grafana Loki for centralized log aggregation; faster root cause analysis",
+          "Zero-downtime deployments with blue-green and canary strategies using Kustomize overlays",
+          "Configured Nginx Ingress Controller with TLS termination for external routing",
+          "Provisioned self-hosted GitLab runners with Docker executor; CI queue times dropped",
+          "Alertmanager routed incidents to Slack and email; right people paged at the right time",
+          "Automated test scripts to validate infrastructure state after provisioning",
+          "Managed pipeline governance and cutover planning for production releases",
+          "Tracked down performance degradation via system and application logs",
+          "Documented infrastructure architecture, deployment procedures, known issues",
+          "Git branch protection with required reviews and status checks; quality gates before merge"
+        ],
+        tech: ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Flux CD", "Grafana", "Prometheus", "GitLab CI/CD", "HashiCorp Vault", "Trivy", "SonarQube", "Kustomize", "Nginx", "Alertmanager"]
+      },
+      {
+        role: "DevOps Engineer",
+        company: "GEO-TRACKING GROUP",
+        period: "Oct 2023 – Apr 2022",
+        bullets: [
+          "Rebuilt CI/CD pipelines; deployment time from days to hours across 15+ microservices",
+          "Cut Docker image sizes by 60% with multi-stage builds; pull times and storage costs dropped",
+          "Provisioned AWS infrastructure with Terraform modules; version-controlled, reproducible",
+          "Integrated SonarQube for automated code quality checks and technical debt tracking",
+          "Wrote Prometheus alerting rules for proactive detection; unplanned outages dropped 40%",
+          "Automated dependency updates and security patching via GitOps across 200+ dependencies",
+          "Managed Docker images and Kubernetes manifests in Nexus as single source of truth",
+          "Automated database backup jobs with point-in-time recovery for PostgreSQL and MySQL",
+          "Hardened pod security with SecurityContext and network segmentation via IPTables/UFW",
+          "Built reusable Jenkins shared libraries to standardize pipeline templates",
+          "Ran installation and upgrade testing; documented results and flagged deviations",
+          "Monitored storage capacity and performance metrics; tuned configs for availability",
+          "Responded to incidents and wrote post-incident reports with remediation steps",
+          "Integrated LDAP for centralized authentication"
+        ],
+        tech: ["Jenkins", "Docker", "Kubernetes", "Terraform", "Ansible", "ArgoCD", "SonarQube", "Nexus", "Prometheus", "Grafana", "Python", "Bash", "AWS", "PostgreSQL", "Cert Manager"]
+      },
+      {
+        role: "System Administrator",
+        company: "VARIOUS ORGANIZATIONS",
+        period: "Jan 2022 – Feb 2016",
+        bullets: [
+          "Managed Linux servers (RHEL, Ubuntu, Debian) — patching, security updates, tuning",
+          "Automated VM provisioning with Ansible; new environment setup time dropped",
+          "Administered routers, switches, firewalls; maintained network policies",
+          "Set up NFS file sharing for centralized storage access across teams",
+          "Configured DNS, DHCP, internal network services",
+          "Designed and tested disaster recovery procedures with regular backup validation",
+          "Managed MySQL and PostgreSQL — backup, recovery, performance optimization",
+          "Configured IPTables and UFW firewall rules to segment network and restrict access",
+          "Deployed Apache and Nginx web servers for internal/external applications",
+          "Integrated Active Directory for centralized authentication across Linux/Windows",
+          "Managed user accounts, SSH keys, sudo policies across enterprise environments",
+          "Provided L2/L3 support with root cause analysis",
+          "Helped end-users with hardware, software, network problems; training sessions",
+          "Maintained documentation of IT processes, network configs, troubleshooting",
+          "Configured storage systems over IPv4 with proper addressing and routing",
+          "Worked with technical teams to plan infrastructure improvements and automation",
+          "Automated alert-to-ticket workflows with SLA-managed resolution"
+        ],
+        tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
+      }
+    ],
+    footer: "AI-assisted log analysis · incident triage · infrastructure diagnostics · MCP servers"
+  },
+
+  fr: {
+    lang: "FR",
+    badge: "DevOps & DevSecOps",
+    themeDark: "Sombre", themeLight: "Clair", downloadPdf: "PDF",
+    profile: "Profil",
+    profileText: "Ingénieur DevOps et DevSecOps spécialisé dans la construction de pipelines CI/CD fiables, la sécurisation des clusters Kubernetes et l'automatisation de l'infrastructure à grande échelle. Je travaille avec AWS, les systèmes Linux et les environnements conteneurisés, avec une expérience approfondie de GitLab CI/CD, Terraform, Ansible et des stacks de monitoring.",
+    technicalSkills: "Compétences Techniques",
+    cloud: "Cloud", containers: "Conteneurs & Orchestration", cicd: "CI/CD & GitOps", iac: "Infrastructure en tant que Code",
+    security: "Sécurité", monitoring: "Monitoring & Logging",
+    networking: "Réseau · Scripts · BD · Stockage",
+    virt: "Virtualisation · Outils IA",
+    languages: "Langues",
+    langArabic: "Arabe", langArabicLevel: "Natif",
+    langFrench: "Français", langFrenchLevel: "Courant",
+    langEnglish: "Anglais", langEnglishLevel: "Professionnel",
+    achievements: "Réalisations Clés",
+    ach: [
+      "Architecture de sécurité Zero-Trust sur Kubernetes",
+      "Scan de sécurité automatisé dans les pipelines CI/CD",
+      "GitOps avec ArgoCD & Flux CD",
+      "Haute disponibilité avec PDB et auto-scaling",
+      "Stack complet de monitoring et d'alerting"
+    ],
+    education: "Formation",
+    edu: [
+      { title: "Licence", desc: "Technologies de l'Information (Réseaux et Services Informatiques)", meta: "I.S.E.T. · 2011 – 2014" },
+      { title: "Baccalauréat", desc: "Sciences de l'Informatique", meta: "2010 – 2011" }
+    ],
+    exp: [
+      {
+        role: "Ingénieur DevOps & DevSecOps",
+        company: "TUNISIE SOFTWARE FACTORY & BE-SOFTILYS",
+        period: "Juin 2025 – Oct 2024",
+        bullets: [
+          "Construit des pipelines GitLab CI/CD avec scan Trivy, GitLeaks et Semgrep. Images vulnérables bloquées avant le staging",
+          "Déployé une sécurité Zero-Trust sur les clusters Kubernetes avec Istio mTLS, NetworkPolicies et OPA Gatekeeper",
+          "Intégré HashiCorp Vault dans les workflows de déploiement avec rotation automatique des secrets via External Secrets Operator",
+          "Mis en place des tableaux de bord Prometheus & Grafana avec routage Alertmanager ; le MTTR a nettement diminué",
+          "Configuré HPA et PodDisruptionBudgets pour gérer les pics de trafic sans perdre de requêtes",
+          "Automatisé le provisionnement des certificats TLS avec Cert-Manager pour toutes les ressources Ingress",
+          "Effectué des tests de validation d'infrastructure de bout en bout après chaque cycle de provisionnement",
+          "Appliqué des contrôles de sécurité CI/CD avec des seuils de vulnérabilité ; pipelines bloqués au-delà des seuils",
+          "Centralisé le suivi des vulnérabilités dans DefectDojo pour le suivi des corrections",
+          "Débogué des problèmes d'exécution Kubernetes — CrashLoopBackOff, ImagePullBackOff, échecs d'ordonnancement",
+          "Rédigé des runbooks et des documents de déploiement ; rapports de validation conservés",
+          "Discussions pré-vente avec des clients potentiels sur les options d'architecture",
+          "Configuré des serveurs MCP pour les assistants IA afin d'interroger les données Kubernetes, CI/CD et monitoring",
+          "Intégré des assistants IA dans les workflows quotidiens pour l'analyse de logs, le triage d'incidents, le diagnostic",
+          "Utilisé des outils IA pour accélérer le développement Terraform et Ansible ; moins d'erreurs de configuration",
+          "Règles de protection de branche avec revues obligatoires et vérifications automatisées des pipelines",
+          "Connecté Alertmanager à Jira ; les alertes génèrent automatiquement des tickets",
+          "Sécurité de la chaîne d'approvisionnement : génération SBOM, signature Cosign, suivi des dépendances",
+          "Déployé Falco pour la sécurité runtime sur les charges de travail Kubernetes"
+        ],
+        tech: ["Kubernetes", "Docker", "Helm", "ArgoCD", "GitLab CI/CD", "Terraform", "AWS", "GitLeaks", "Semgrep", "Trivy", "OPA Gatekeeper", "Kyverno", "DefectDojo", "Prometheus", "Grafana", "Istio", "HashiCorp Vault", "Harbor"]
+      },
+      {
+        role: "Ingénieur DevOps",
+        company: "DOPIFY SOFTWARE & TECHNOLOGIES",
+        period: "Avr 2024 – Jan 2024",
+        bullets: [
+          "Conçu des pipelines CI/CD pour plusieurs équipes avec SAST, SCA et scan de secrets dans chaque build",
+          "Automatisé le provisionnement des serveurs en dev, staging, production avec Ansible ; éliminé la dérive manuelle",
+          "Mis en place Flux CD pour une infrastructure GitOps ; environnements déclaratifs et auditable",
+          "Déployé Grafana Loki pour l'agrégation centralisée des logs ; analyse des causes plus rapide",
+          "Déploiements sans temps d'arrêt avec des stratégies blue-green et canary via Kustomize",
+          "Configuré Nginx Ingress Controller avec terminaison TLS pour le routage externe",
+          "Provisionné des runners GitLab auto-hébergés avec exécuteur Docker ; les temps d'attente CI ont diminué",
+          "Alertmanager a routé les incidents vers Slack et email ; les bonnes personnes contactées au bon moment",
+          "Automatisé des scripts de test pour valider l'état de l'infrastructure après provisionnement",
+          "Géré la gouvernance des pipelines et la planification des transitions pour les releases de production",
+          "Identifié les dégradations de performance via les logs système et application",
+          "Documenté l'architecture d'infrastructure, les procédures de déploiement, les problèmes connus",
+          "Protection de branche Git avec revues obligatoires et vérifications de statut ; contrôles qualité avant merge"
+        ],
+        tech: ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Flux CD", "Grafana", "Prometheus", "GitLab CI/CD", "HashiCorp Vault", "Trivy", "SonarQube", "Kustomize", "Nginx", "Alertmanager"]
+      },
+      {
+        role: "Ingénieur DevOps",
+        company: "GEO-TRACKING GROUP",
+        period: "Oct 2023 – Avr 2022",
+        bullets: [
+          "Reconstruit les pipelines CI/CD ; temps de déploiement réduit de jours à heures pour 15+ microservices",
+          "Réduit la taille des images Docker de 60% avec des builds multi-étapes ; coûts de pull et de stockage réduits",
+          "Provisionné l'infrastructure AWS avec des modules Terraform ; versionné, reproductible",
+          "Intégré SonarQube pour les vérifications automatisées de qualité de code et le suivi de la dette technique",
+          "Rédigé des règles d'alerte Prometheus pour la détection proactive ; les pannes non planifiées ont chuté de 40%",
+          "Automatisé les mises à jour de dépendances et les correctifs de sécurité via GitOps sur 200+ dépendances",
+          "Géré les images Docker et les manifests Kubernetes dans Nexus comme source unique de vérité",
+          "Automatisé les sauvegardes de bases de données avec restauration ponctuelle pour PostgreSQL et MySQL",
+          "Renforcé la sécurité des pods avec SecurityContext et segmentation réseau via IPTables/UFW",
+          "Construit des bibliothèques Jenkins partagées réutilisables pour standardiser les templates de pipelines",
+          "Effectué des tests d'installation et de mise à niveau ; résultats documentés et écarts signalés",
+          "Surveillé la capacité de stockage et les métriques de performance ; configurations ajustées pour la disponibilité",
+          "Répondu aux incidents et rédigé des rapports post-incident avec mesures correctives",
+          "Intégré LDAP pour l'authentification centralisée"
+        ],
+        tech: ["Jenkins", "Docker", "Kubernetes", "Terraform", "Ansible", "ArgoCD", "SonarQube", "Nexus", "Prometheus", "Grafana", "Python", "Bash", "AWS", "PostgreSQL", "Cert Manager"]
+      },
+      {
+        role: "Administrateur Système",
+        company: "DIVERSES ORGANISATIONS",
+        period: "Jan 2022 – Fév 2016",
+        bullets: [
+          "Géré des serveurs Linux (RHEL, Ubuntu, Debian) — correctifs, mises à jour sécurité, optimisation",
+          "Automatisé le provisionnement de VM avec Ansible ; temps de configuration d'environnement réduit",
+          "Administré des routeurs, commutateurs, pare-feux ; maintenu les politiques réseau",
+          "Mis en place le partage de fichiers NFS pour l'accès centralisé au stockage entre équipes",
+          "Configuré DNS, DHCP, services réseau internes",
+          "Conçu et testé des procédures de reprise après sinistre avec validation régulière des sauvegardes",
+          "Géré MySQL et PostgreSQL — sauvegarde, restauration, optimisation des performances",
+          "Configuré les règles de pare-feu IPTables et UFW pour segmenter le réseau et restreindre l'accès",
+          "Déployé des serveurs web Apache et Nginx pour des applications internes/externes",
+          "Intégré Active Directory pour l'authentification centralisée sur Linux/Windows",
+          "Géré les comptes utilisateurs, clés SSH, politiques sudo dans des environnements d'entreprise",
+          "Fourni un support L2/L3 avec analyse des causes racines",
+          "Aidé les utilisateurs finaux avec des problèmes matériels, logiciels, réseau ; sessions de formation",
+          "Maintenu la documentation des processus IT, configurations réseau, dépannage",
+          "Configuré des systèmes de stockage sur IPv4 avec adressage et routage appropriés",
+          "Collaboré avec les équipes techniques pour planifier les améliorations et l'automatisation",
+          "Automatisé les workflows alerte-ticket avec résolution gérée par SLA"
+        ],
+        tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
+      }
+    ],
+    footer: "Analyse de logs assistée par IA · triage d'incidents · diagnostic d'infrastructure · serveurs MCP"
+  },
+
+  ar: {
+    lang: "العربية",
+    badge: "DevOps و DevSecOps",
+    themeDark: "داكن", themeLight: "فاتح", downloadPdf: "PDF",
+    profile: "الملف الشخصي",
+    profileText: "مهندس DevOps و DevSecOps متخصص في بناء خطوط CI/CD موثوقة، تأمين مجموعات Kubernetes، وأتمتة البنية التحتية على نطاق واسع. أعمل على AWS، أنظمة Linux، والبيئات الحاوية، مع خبرة عميقة في GitLab CI/CD، Terraform، Ansible، وأكوام المراقبة.",
+    technicalSkills: "المهارات التقنية",
+    cloud: "السحابة", containers: "الحاويات والتنسيق", cicd: "CI/CD و GitOps", iac: "البنية التحتية ككود",
+    security: "الأمان", monitoring: "المراقبة والتسجيل",
+    networking: "الشبكات · البرمجة · قواعد البيانات · التخزين",
+    virt: "المحاكاة الافتراضية · أدوات الذكاء الاصطناعي",
+    languages: "اللغات",
+    langArabic: "العربية", langArabicLevel: "الأم",
+    langFrench: "الفرنسية", langFrenchLevel: "بطلاقة",
+    langEnglish: "الإنجليزية", langEnglishLevel: "مهني",
+    achievements: "الإنجازات الرئيسية",
+    ach: [
+      "بنية أمان Zero-Trust على Kubernetes",
+      "الفحص الأمني الآلي في خطوط CI/CD",
+      "GitOps باستخدام ArgoCD و Flux CD",
+      "توفر عالي مع PDB والتوسع التلقائي",
+      "حزمة مراقبة وتنبيه شاملة"
+    ],
+    education: "التعليم",
+    edu: [
+      { title: "شهادة البكالوريوس", desc: "تكنولوجيا المعلومات (شبكات وخدمات الحاسوب)", meta: "I.S.E.T. · 2011 – 2014" },
+      { title: "شهادة البكالوريا", desc: "علوم الحاسوب", meta: "2010 – 2011" }
+    ],
+    exp: [
+      {
+        role: "مهندس DevOps و DevSecOps",
+        company: "TUNISIE SOFTWARE FACTORY & BE-SOFTILYS",
+        period: "يونيو 2025 – أكتوبر 2024",
+        bullets: [
+          "بناء خطوط GitLab CI/CD مع فحص Trivy، GitLeaks، و Semgrep. صور الحاويات الضعيفة ممنوعة قبل الانتقال",
+          "نشر أمان Zero-Trust على مجموعات Kubernetes باستخدام Istio mTLS، NetworkPolicies، و OPA Gatekeeper",
+          "ربط HashiCorp Vault بسياقات النشر مع التدوير الآلي للأسرار عبر External Secrets Operator",
+          "إنشاء لوحات Prometheus و Grafana مع توجيه Alertmanager؛ انخفاض ملحوظ في MTTR",
+          "تكوين HPA و PodDisruptionBudgets للتعامل مع ارتفاعات الحركة بدون فقدان الطلبات",
+          "أتمتة توفير شهادات TLS عبر Cert-Manager لجميع موارد Ingress",
+          "إجراء اختبارات تحقق شاملة للبنية التحتية بعد كل دورة توفير",
+          "تطبيق بوابات أمان CI/CD مع عتبات الثغرات؛ فشل خطوط الإنتاج عند تجاوز العتبات",
+          "مركزة تتبع الثغرات في DefectDojo لمتابعة الإصلاحات",
+          "تصحيح مشاكل تنفيذ Kubernetes — CrashLoopBackOff، ImagePullBackOff، أخطاء الجدولة",
+          "كتابة runbooks ووثائق النشر؛ الاحتفاظ بتقارير التحقق",
+          "مناقشات ما قبل البيع مع عملاء محتملين حول خيارات البنية",
+          "تكوين خوادم MCP للمساعدين الذكية للاستعلام عن بيانات Kubernetes و CI/CD والمراقبة",
+          "إدخال المساعدين الذكية في سير العمل اليومي لتحليل السجلات، فرز الحوادث، التشخيص",
+          "استخدام أدوات الذكاء الاصطناعي لتسريع تطوير Terraform و Ansible؛ أخطاء تكوين أقل",
+          "قواعد حماية الفرع مع مراجعات إلزامية وفحوصات آلية لخطوط الإنتاج",
+          "ربط Alertmanager بـ Jira؛ التنبيهات تولد تذاكر خدمة تلقائياً",
+          "أمان سلسلة التوريد: توليد SBOM، توقيع Cosign، تتبع التبعيات",
+          "نشر Falco لأمان وقت التشغيل على أحمال عمل Kubernetes"
+        ],
+        tech: ["Kubernetes", "Docker", "Helm", "ArgoCD", "GitLab CI/CD", "Terraform", "AWS", "GitLeaks", "Semgrep", "Trivy", "OPA Gatekeeper", "Kyverno", "DefectDojo", "Prometheus", "Grafana", "Istio", "HashiCorp Vault", "Harbor"]
+      },
+      {
+        role: "مهندس DevOps",
+        company: "DOPIFY SOFTWARE & TECHNOLOGIES",
+        period: "أبريل 2024 – يناير 2024",
+        bullets: [
+          "تصميم خطوط CI/CD لعدة فرق مع SAST، SCA، وفحص الأسرار في كل بناء",
+          "أتمتة توفير الخوادم في dev، staging، production مع Ansible؛ القضاء على الانحراف اليدوي",
+          "إعداد Flux CD لبنية تحتية تعمل بـ GitOps؛ بيئات تعريفية وقابلة للتدقيق",
+          "نشر Grafana Loki لتجميع السجلات المركزي؛ تحليل أسرع للأسباب الجذرية",
+          "نشر بدون توقف باستراتيجيات blue-green و canary باستخدام Kustomize",
+          "تكوين Nginx Ingress Controller مع إنهاء TLS للتوجيه الخارجي",
+          "توفير runners GitLab ذاتية الاستضافة مع منفذ Docker؛ انخفاض أوقات انتظار CI",
+          "توجيه Alertmanager للحوادث إلى Slack والبريد الإلكتروني؛ إخطار الأشخاص المناسبين في الوقت المناسب",
+          "أتمتة نصوص اختبار للتحقق من حالة البنية التحتية بعد التوفير",
+          "إدارة حوكمة خطوط الإنتاج وتخطيط التحول لإصدارات الإنتاج",
+          "تتبع تدهور الأداء عبر سجلات النظام والتطبيق",
+          "توثيق بنية البنية التحتية، إجراءات النشر، المشكلات المعروفة",
+          "حماية فرع Git مع مراجعات إلزامية وفحوصات الحالة؛ بوابات جودة قبل الدمج"
+        ],
+        tech: ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Flux CD", "Grafana", "Prometheus", "GitLab CI/CD", "HashiCorp Vault", "Trivy", "SonarQube", "Kustomize", "Nginx", "Alertmanager"]
+      },
+      {
+        role: "مهندس DevOps",
+        company: "GEO-TRACKING GROUP",
+        period: "أكتوبر 2023 – أبريل 2022",
+        bullets: [
+          "إعادة بناء خطوط CI/CD؛ تقليل وقت النشر من أيام إلى ساعات عبر 15+ خدمة مصغرة",
+          "تقليل حجم صور Docker بنسبة 60% مع builds متعددة المراحل؛ انخفاض تكاليف السحب والتخزين",
+          "توفير البنية التحتية AWS مع وحدات Terraform؛ بإصدارات، قابل للتكرار",
+          "دمج SonarQube لفحوصات جودة الكود الآلية وتتبع الديون التقنية",
+          "كتابة قواعد تنبيه Prometheus للكشف الاستباقي؛ انخفاض الأعطال غير المخطط لها بنسبة 40%",
+          "أتمتة تحديثات التبعيات وتصحيحات الأمان عبر GitOps على 200+ تبعية",
+          "إدارة صور Docker و manifests Kubernetes في Nexus كمصدر وحيد للحقيقة",
+          "أتمتة نسخ احتياطي لقواعد البيانات مع استعادة نقطة زمنية لـ PostgreSQL و MySQL",
+          "تعزيز أمان pods مع SecurityContext وتقسيم الشبكة عبر IPTables/UFW",
+          "بناء مكتبات Jenkins مشتركة قابلة لإعادة الاستخدام لتوحيد قوالب خطوط الإنتاج",
+          "إجراء اختبارات التثبيت والترقية؛ توثيق النتائج والإبلاغ عن الانحرافات",
+          "مراقبة سعة التخزين ومقاييس الأداء؛ ضبط التكوينات للتوفر",
+          "الاستجابة للحوادث وكتابة تقارير ما بعد الحادث مع خطوات المعالجة",
+          "دمج LDAP للمصادقة المركزية"
+        ],
+        tech: ["Jenkins", "Docker", "Kubernetes", "Terraform", "Ansible", "ArgoCD", "SonarQube", "Nexus", "Prometheus", "Grafana", "Python", "Bash", "AWS", "PostgreSQL", "Cert Manager"]
+      },
+      {
+        role: "مسؤول أنظمة",
+        company: "مؤسسات مختلفة",
+        period: "يناير 2022 – فبراير 2016",
+        bullets: [
+          "إدارة خوادم Linux (RHEL, Ubuntu, Debian) — التصحيحات، تحديثات الأمان، التحسين",
+          "أتمتة توفير VM مع Ansible؛ انخفاض وقت إعداد البيئة الجديدة",
+          "إدارة أجهزة التوجيه، المحولات، جدران الحماية؛ الحفاظ على سياسات الشبكة",
+          "إعداد مشاركة ملفات NFS للوصول المركزي للتخزين عبر الفرق",
+          "تكوين DNS، DHCP، خدمات الشبكة الداخلية",
+          "تصميم واختبار إجراءات التعافي من الكوارث مع التحقق المنتظم من النسخ الاحتياطية",
+          "إدارة MySQL و PostgreSQL — النسخ الاحتياطي، الاستعادة، تحسين الأداء",
+          "تكوين قواعد جدار الحماية IPTables و UFW لتقسيم الشبكة وتقييد الوصول",
+          "نشر خوادم الويب Apache و Nginx للتطبيقات الداخلية/الخارجية",
+          "دمج Active Directory للمصادقة المركزية عبر Linux/Windows",
+          "إدارة حسابات المستخدمين، مفاتيح SSH، سياسات sudo في بيئات المؤسسات",
+          "تقديم دعم L2/L3 مع تحليل الأسباب الجذرية",
+          "مساعدة المستخدمين النهائيين مع مشاكل الأجهزة، البرامج، الشبكة؛ جلسات تدريبية",
+          "الحفاظ على توثيق عمليات تكنولوجيا المعلومات، تكوينات الشبكة، استكشاف الأخطاء",
+          "تكوين أنظمة تخزين عبر IPv4 مع العنونة والتوجيه المناسبين",
+          "العمل مع الفرق التقنية لتخطيط تحسينات البنية التحتية والأتمتة",
+          "أتمتة سير عمل التنبيه إلى التذكرة مع حل مدار بـ SLA"
+        ],
+        tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
+      }
+    ],
+    footer: "تحليل السجلات بمساعدة الذكاء الاصطناعي · فرز الحوادث · تشخيص البنية التحتية · خوادم MCP"
+  }
+};
