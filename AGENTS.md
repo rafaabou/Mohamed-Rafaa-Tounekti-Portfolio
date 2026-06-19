@@ -30,4 +30,21 @@
 
 ## Cache busting
 
-CSS/JS links have `?v=N` query params. Increment `v` when modifying those files so browsers reload them.
+CSS/JS links have `?v=N` query params. Increment `v` by 1 when modifying those files so browsers reload them.
+
+## CSS conventions
+
+- **Utilities**: `.mt-1` (margin-top: 0.5rem), `.icon-left` (margin-right: 8px), `.icon-left-sm` (margin-right: 6px), `.skill-label` (shared skill heading styles)
+- **Footer**: styled via `.cv-footer` class, not inline
+- **Profile text**: styled via `#profile-text` in CSS, not inline
+- **Animations**: `.fade-in` elements get staggered `--fade-delay` CSS custom property set by JS
+
+## Accessibility
+
+- Contact links have `aria-label` attributes for screen readers
+- Theme toggle button dynamically updates `aria-label` ("Switch to light/dark mode")
+- Profile photo click opens a lightbox overlay
+
+## GitHub Pages
+
+A deploy workflow exists at `.github/workflows/deploy.yml`. Push to `main` to auto-deploy.

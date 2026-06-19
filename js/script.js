@@ -154,6 +154,9 @@
     if (themeIcon) {
       themeIcon.className = theme === 'light' ? 'fas fa-sun' : 'fas fa-moon';
     }
+    if (toggle) {
+      toggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+    }
   }
 
   var savedTheme = localStorage.getItem('cv-theme');
@@ -178,13 +181,19 @@
   if (pdfBtn) {
     pdfBtn.addEventListener('click', function (e) {
       e.preventDefault();
+      var origTitle = document.title;
+      document.title = 'Mohamed_Rafaa_Tounekti_CV';
       window.print();
+      setTimeout(function () { document.title = origTitle; }, 100);
     });
   }
 
   /* ── Scroll animations (Intersection Observer) ── */
   function observeFadeIn() {
     var els = document.querySelectorAll('.fade-in');
+    els.forEach(function (el, i) {
+      el.style.setProperty('--fade-delay', (i * 0.08) + 's');
+    });
     if ('IntersectionObserver' in window) {
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
@@ -203,4 +212,20 @@
   /* ── Init ── */
   applyLang(currentLang);
   observeFadeIn();
+
+  /* ── Photo lightbox ── */
+  var photo = document.querySelector('.profile-photo img');
+  if (photo) {
+    photo.style.cursor = 'pointer';
+    photo.addEventListener('click', function () {
+      var overlay = document.createElement('div');
+      overlay.className = 'photo-lightbox';
+      var img = document.createElement('img');
+      img.src = this.src;
+      img.alt = this.alt;
+      overlay.appendChild(img);
+      overlay.addEventListener('click', function () { this.remove(); });
+      document.body.appendChild(overlay);
+    });
+  }
 })();

@@ -106,12 +106,12 @@ body.rtl .exp-desc {
   padding-left: 0;
 }
 
-body.rtl .profile-card h3 i {
+body.rtl .icon-left {
   margin-right: 0 !important;
   margin-left: 8px;
 }
 
-body.rtl .badge i {
+body.rtl .icon-left-sm {
   margin-right: 0 !important;
   margin-left: 6px;
 }
@@ -298,6 +298,10 @@ body.rtl .name-title {
   transform: scale(1.05);
 }
 
+#profile-text { font-size: 0.95rem; line-height: 1.6; }
+.icon-left { margin-right: 8px; }
+.icon-left-sm { margin-right: 6px; }
+
 /* ── Profile card ── */
 .profile-card {
   background: var(--bg-card);
@@ -347,6 +351,9 @@ body.rtl .name-title {
   border-color: var(--highlight-border);
   color: var(--text-primary);
 }
+
+.skill-label { font-size: 0.8rem; margin: 0.7rem 0 0.3rem; }
+.skill-label:first-of-type { margin-bottom: 0.5rem; margin-top: 0; }
 
 /* ── Language list ── */
 .lang-item {
@@ -403,6 +410,8 @@ body.rtl .name-title {
   color: var(--text-muted);
   display: block;
 }
+
+.mt-1 { margin-top: 0.5rem; }
 
 /* ── Experience ── */
 .main-content {
@@ -532,6 +541,42 @@ body.rtl .name-title {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Footer ── */
+.cv-footer {
+  margin-top: 1.6rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ── Photo lightbox ── */
+.photo-lightbox {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+  animation: lightbox-fade 0.3s;
+}
+.photo-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+@keyframes lightbox-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── Staggered fade-in ── */
+.fade-in { transition-delay: var(--fade-delay, 0s); }
 
 /* ── Responsive ── */
 @media (max-width: 850px) {
@@ -740,6 +785,17 @@ body.rtl .name-title {
   .text-muted { font-size: 5.5pt !important; margin-bottom: 0 !important; margin-top: 2pt !important; color: #555 !important; }
 
   .fade-in { opacity: 1 !important; transform: none !important; }
+
+  /* footer visible in print */
+  .cv-footer {
+    margin-top: 6pt;
+    border-top: 0.5pt solid #ccc;
+    padding-top: 3pt;
+    font-size: 5pt;
+    color: #555;
+    text-align: center;
+    clear: both;
+  }
 
   /* force page break after exp 2 on RIGHT column only */
   .exp-block:nth-child(2) {

@@ -1,3 +1,10 @@
+const TECH = [
+  ["Kubernetes", "Docker", "Helm", "ArgoCD", "GitLab CI/CD", "Terraform", "AWS", "GitLeaks", "Semgrep", "Trivy", "OPA Gatekeeper", "Kyverno", "DefectDojo", "Prometheus", "Grafana", "Istio", "HashiCorp Vault", "Harbor"],
+  ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Flux CD", "Grafana", "Prometheus", "GitLab CI/CD", "HashiCorp Vault", "Trivy", "SonarQube", "Kustomize", "Nginx", "Alertmanager"],
+  ["Jenkins", "Docker", "Kubernetes", "Terraform", "Ansible", "ArgoCD", "SonarQube", "Nexus", "Prometheus", "Grafana", "Python", "Bash", "AWS", "PostgreSQL", "Cert Manager"],
+  ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
+];
+
 const i18n = {
   en: {
     lang: "EN",
@@ -54,7 +61,7 @@ const i18n = {
           "Supply chain security: SBOM generation, Cosign image signing, dependency tracking",
           "Deployed Falco for runtime security on Kubernetes workloads"
         ],
-        tech: ["Kubernetes", "Docker", "Helm", "ArgoCD", "GitLab CI/CD", "Terraform", "AWS", "GitLeaks", "Semgrep", "Trivy", "OPA Gatekeeper", "Kyverno", "DefectDojo", "Prometheus", "Grafana", "Istio", "HashiCorp Vault", "Harbor"]
+        tech: TECH[0]
       },
       {
         role: "DevOps Engineer",
@@ -75,7 +82,7 @@ const i18n = {
           "Documented infrastructure architecture, deployment procedures, known issues",
           "Git branch protection with required reviews and status checks; quality gates before merge"
         ],
-        tech: ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Flux CD", "Grafana", "Prometheus", "GitLab CI/CD", "HashiCorp Vault", "Trivy", "SonarQube", "Kustomize", "Nginx", "Alertmanager"]
+        tech: TECH[1]
       },
       {
         role: "DevOps Engineer",
@@ -97,7 +104,7 @@ const i18n = {
           "Responded to incidents and wrote post-incident reports with remediation steps",
           "Integrated LDAP for centralized authentication"
         ],
-        tech: ["Jenkins", "Docker", "Kubernetes", "Terraform", "Ansible", "ArgoCD", "SonarQube", "Nexus", "Prometheus", "Grafana", "Python", "Bash", "AWS", "PostgreSQL", "Cert Manager"]
+        tech: TECH[2]
       },
       {
         role: "System Administrator",
@@ -122,7 +129,7 @@ const i18n = {
           "Worked with technical teams to plan infrastructure improvements and automation",
           "Automated alert-to-ticket workflows with SLA-managed resolution"
         ],
-        tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
+        tech: TECH[3]
       }
     ],
     locationText: "Tunis, Tunisie",
@@ -184,7 +191,7 @@ const i18n = {
           "Sécurité de la chaîne d'approvisionnement : génération SBOM, signature Cosign, suivi des dépendances",
           "Déployé Falco pour la sécurité runtime sur les charges de travail Kubernetes"
         ],
-        tech: ["Kubernetes", "Docker", "Helm", "ArgoCD", "GitLab CI/CD", "Terraform", "AWS", "GitLeaks", "Semgrep", "Trivy", "OPA Gatekeeper", "Kyverno", "DefectDojo", "Prometheus", "Grafana", "Istio", "HashiCorp Vault", "Harbor"]
+        tech: TECH[0]
       },
       {
         role: "Ingénieur DevOps",
@@ -205,7 +212,7 @@ const i18n = {
           "Documenté l'architecture d'infrastructure, les procédures de déploiement, les problèmes connus",
           "Protection de branche Git avec revues obligatoires et vérifications de statut ; contrôles qualité avant merge"
         ],
-        tech: ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Flux CD", "Grafana", "Prometheus", "GitLab CI/CD", "HashiCorp Vault", "Trivy", "SonarQube", "Kustomize", "Nginx", "Alertmanager"]
+        tech: TECH[1]
       },
       {
         role: "Ingénieur DevOps",
@@ -227,7 +234,7 @@ const i18n = {
           "Répondu aux incidents et rédigé des rapports post-incident avec mesures correctives",
           "Intégré LDAP pour l'authentification centralisée"
         ],
-        tech: ["Jenkins", "Docker", "Kubernetes", "Terraform", "Ansible", "ArgoCD", "SonarQube", "Nexus", "Prometheus", "Grafana", "Python", "Bash", "AWS", "PostgreSQL", "Cert Manager"]
+        tech: TECH[2]
       },
       {
         role: "Administrateur Système",
@@ -252,7 +259,7 @@ const i18n = {
           "Collaboré avec les équipes techniques pour planifier les améliorations et l'automatisation",
           "Automatisé les workflows alerte-ticket avec résolution gérée par SLA"
         ],
-        tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
+        tech: TECH[3]
       }
     ],
     locationText: "Tunis, Tunisie",
@@ -314,7 +321,7 @@ const i18n = {
           "أمان سلسلة التوريد: توليد SBOM، توقيع Cosign، تتبع التبعيات",
           "نشر Falco لأمان وقت التشغيل على أحمال عمل Kubernetes"
         ],
-        tech: ["Kubernetes", "Docker", "Helm", "ArgoCD", "GitLab CI/CD", "Terraform", "AWS", "GitLeaks", "Semgrep", "Trivy", "OPA Gatekeeper", "Kyverno", "DefectDojo", "Prometheus", "Grafana", "Istio", "HashiCorp Vault", "Harbor"]
+        tech: TECH[0]
       },
       {
         role: "مهندس DevOps",
@@ -335,7 +342,7 @@ const i18n = {
           "توثيق بنية البنية التحتية، إجراءات النشر، المشكلات المعروفة",
           "حماية فرع Git مع مراجعات إلزامية وفحوصات الحالة؛ بوابات جودة قبل الدمج"
         ],
-        tech: ["AWS", "Kubernetes", "Docker", "Terraform", "Ansible", "Flux CD", "Grafana", "Prometheus", "GitLab CI/CD", "HashiCorp Vault", "Trivy", "SonarQube", "Kustomize", "Nginx", "Alertmanager"]
+        tech: TECH[1]
       },
       {
         role: "مهندس DevOps",
@@ -357,7 +364,7 @@ const i18n = {
           "الاستجابة للحوادث وكتابة تقارير ما بعد الحادث مع خطوات المعالجة",
           "دمج LDAP للمصادقة المركزية"
         ],
-        tech: ["Jenkins", "Docker", "Kubernetes", "Terraform", "Ansible", "ArgoCD", "SonarQube", "Nexus", "Prometheus", "Grafana", "Python", "Bash", "AWS", "PostgreSQL", "Cert Manager"]
+        tech: TECH[2]
       },
       {
         role: "مسؤول أنظمة",
@@ -382,7 +389,7 @@ const i18n = {
           "العمل مع الفرق التقنية لتخطيط تحسينات البنية التحتية والأتمتة",
           "أتمتة سير عمل التنبيه إلى التذكرة مع حل مدار بـ SLA"
         ],
-        tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
+        tech: TECH[3]
       }
     ],
     locationText: "تونس، تونس العاصمة",
