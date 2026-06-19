@@ -20,6 +20,9 @@
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
 
+    /* name */
+    setText('name-text', t.nameText);
+
     /* name badge */
     var badgeEl = document.getElementById('badge');
     if (badgeEl) badgeEl.textContent = t.badge;
@@ -123,6 +126,9 @@
       /* re-observe new fade-in elements */
       observeFadeIn();
     }
+
+    /* location */
+    setText('location-text', t.locationText);
 
     /* footer */
     setText('footer-text', t.footer);

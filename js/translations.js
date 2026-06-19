@@ -1,6 +1,7 @@
 const i18n = {
   en: {
     lang: "EN",
+    nameText: "Mohamed Rafaa TOUNEKTI",
     badge: "DevOps & DevSecOps",
     themeDark: "Dark", themeLight: "Light", downloadPdf: "PDF",
     profile: "Profile",
@@ -124,19 +125,21 @@ const i18n = {
         tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
       }
     ],
+    locationText: "Tunis, Tunisie",
     footer: "AI-assisted log analysis · incident triage · infrastructure diagnostics · MCP servers"
   },
 
   fr: {
     lang: "FR",
+    nameText: "TOUNEKTI Mohamed Rafaa",
     badge: "DevOps & DevSecOps",
-    themeDark: "Sombre", themeLight: "Clair", downloadPdf: "PDF",
+    themeDark: "Foncé", themeLight: "Clair", downloadPdf: "PDF",
     profile: "Profil",
     profileText: "Ingénieur DevOps et DevSecOps spécialisé dans la construction de pipelines CI/CD fiables, la sécurisation des clusters Kubernetes et l'automatisation de l'infrastructure à grande échelle. Je travaille avec AWS, les systèmes Linux et les environnements conteneurisés, avec une expérience approfondie de GitLab CI/CD, Terraform, Ansible et des stacks de monitoring.",
     technicalSkills: "Compétences Techniques",
     cloud: "Cloud", containers: "Conteneurs & Orchestration", cicd: "CI/CD & GitOps", iac: "Infrastructure en tant que Code",
     security: "Sécurité", monitoring: "Monitoring & Logging",
-    networking: "Réseau · Scripts · BD · Stockage",
+    networking: "Réseau · Scripts · Bases de données · Stockage",
     virt: "Virtualisation · Outils IA",
     languages: "Langues",
     langArabic: "Arabe", langArabicLevel: "Natif",
@@ -153,13 +156,13 @@ const i18n = {
     education: "Formation",
     edu: [
       { title: "Licence", desc: "Technologies de l'Information (Réseaux et Services Informatiques)", meta: "I.S.E.T. · 2011 – 2014" },
-      { title: "Baccalauréat", desc: "Sciences de l'Informatique", meta: "2010 – 2011" }
+      { title: "Baccalauréat", desc: "Science Informatique", meta: "2010 – 2011" }
     ],
     exp: [
       {
         role: "Ingénieur DevOps & DevSecOps",
         company: "TUNISIE SOFTWARE FACTORY & BE-SOFTILYS",
-        period: "Juin 2025 – Oct 2024",
+        period: "Juin 2025 – Octobre 2024",
         bullets: [
           "Construit des pipelines GitLab CI/CD avec scan Trivy, GitLeaks et Semgrep. Images vulnérables bloquées avant le staging",
           "Déployé une sécurité Zero-Trust sur les clusters Kubernetes avec Istio mTLS, NetworkPolicies et OPA Gatekeeper",
@@ -186,7 +189,7 @@ const i18n = {
       {
         role: "Ingénieur DevOps",
         company: "DOPIFY SOFTWARE & TECHNOLOGIES",
-        period: "Avr 2024 – Jan 2024",
+        period: "Avril 2024 – Janvier 2024",
         bullets: [
           "Conçu des pipelines CI/CD pour plusieurs équipes avec SAST, SCA et scan de secrets dans chaque build",
           "Automatisé le provisionnement des serveurs en dev, staging, production avec Ansible ; éliminé la dérive manuelle",
@@ -207,7 +210,7 @@ const i18n = {
       {
         role: "Ingénieur DevOps",
         company: "GEO-TRACKING GROUP",
-        period: "Oct 2023 – Avr 2022",
+        period: "Octobre 2023 – Avril 2022",
         bullets: [
           "Reconstruit les pipelines CI/CD ; temps de déploiement réduit de jours à heures pour 15+ microservices",
           "Réduit la taille des images Docker de 60% avec des builds multi-étapes ; coûts de pull et de stockage réduits",
@@ -229,7 +232,7 @@ const i18n = {
       {
         role: "Administrateur Système",
         company: "DIVERSES ORGANISATIONS",
-        period: "Jan 2022 – Fév 2016",
+        period: "Janvier 2022 – Février 2016",
         bullets: [
           "Géré des serveurs Linux (RHEL, Ubuntu, Debian) — correctifs, mises à jour sécurité, optimisation",
           "Automatisé le provisionnement de VM avec Ansible ; temps de configuration d'environnement réduit",
@@ -252,11 +255,13 @@ const i18n = {
         tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
       }
     ],
+    locationText: "Tunis, Tunisie",
     footer: "Analyse de logs assistée par IA · triage d'incidents · diagnostic d'infrastructure · serveurs MCP"
   },
 
   ar: {
     lang: "العربية",
+    nameText: "محمد رافع التونكتي",
     badge: "DevOps و DevSecOps",
     themeDark: "داكن", themeLight: "فاتح", downloadPdf: "PDF",
     profile: "الملف الشخصي",
@@ -267,16 +272,16 @@ const i18n = {
     networking: "الشبكات · البرمجة · قواعد البيانات · التخزين",
     virt: "المحاكاة الافتراضية · أدوات الذكاء الاصطناعي",
     languages: "اللغات",
-    langArabic: "العربية", langArabicLevel: "الأم",
-    langFrench: "الفرنسية", langFrenchLevel: "بطلاقة",
-    langEnglish: "الإنجليزية", langEnglishLevel: "مهني",
+    langArabic: "العربية", langArabicLevel: "لغة أم",
+    langFrench: "الفرنسية", langFrenchLevel: "متقدم",
+    langEnglish: "الإنجليزية", langEnglishLevel: "احترافي",
     achievements: "الإنجازات الرئيسية",
     ach: [
       "بنية أمان Zero-Trust على Kubernetes",
       "الفحص الأمني الآلي في خطوط CI/CD",
       "GitOps باستخدام ArgoCD و Flux CD",
       "توفر عالي مع PDB والتوسع التلقائي",
-      "حزمة مراقبة وتنبيه شاملة"
+      "مجموعة متكاملة للمراقبة والتنبيهات"
     ],
     education: "التعليم",
     edu: [
@@ -297,7 +302,7 @@ const i18n = {
           "أتمتة توفير شهادات TLS عبر Cert-Manager لجميع موارد Ingress",
           "إجراء اختبارات تحقق شاملة للبنية التحتية بعد كل دورة توفير",
           "تطبيق بوابات أمان CI/CD مع عتبات الثغرات؛ فشل خطوط الإنتاج عند تجاوز العتبات",
-          "مركزة تتبع الثغرات في DefectDojo لمتابعة الإصلاحات",
+          "مركزية تتبع الثغرات في DefectDojo لمتابعة الإصلاحات",
           "تصحيح مشاكل تنفيذ Kubernetes — CrashLoopBackOff، ImagePullBackOff، أخطاء الجدولة",
           "كتابة runbooks ووثائق النشر؛ الاحتفاظ بتقارير التحقق",
           "مناقشات ما قبل البيع مع عملاء محتملين حول خيارات البنية",
@@ -380,6 +385,7 @@ const i18n = {
         tech: ["Linux", "DHCP", "DNS", "Active Directory", "MySQL", "PostgreSQL", "VMware", "KVM", "Ansible", "Bash", "VPN", "Firewalls", "NFS", "Apache", "Nginx"]
       }
     ],
+    locationText: "تونس، تونس العاصمة",
     footer: "تحليل السجلات بمساعدة الذكاء الاصطناعي · فرز الحوادث · تشخيص البنية التحتية · خوادم MCP"
   }
 };
