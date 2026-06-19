@@ -685,4 +685,20 @@ body.rtl .name-title {
   .sidebar > div:last-child {
     page-break-after: avoid;
   }
+
+  /* RTL (Arabic) print fixes */
+  body.rtl .achievement-list li {
+    padding: 0 0.7rem 0 0;
+  }
+  body.rtl .exp-desc li {
+    padding: 0.03rem 0.5rem 0.03rem 0;
+  }
+  body.rtl .exp-desc li::before {
+    left: auto;
+    right: 0;
+  }
+  body.rtl .achievement-list li::before {
+    left: auto;
+    right: 0;
+  }
 }
