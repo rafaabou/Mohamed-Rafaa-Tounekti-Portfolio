@@ -295,8 +295,8 @@ body.rtl .name-title {
 
 .qr-item img {
   display: block;
-  width: 56px;
-  height: 56px;
+  width: 80px;
+  height: 80px;
   border-radius: 4px;
 }
 
@@ -649,8 +649,8 @@ body.rtl .name-title {
     font-size: 0.7rem;
   }
   .qr-item img {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
   }
   .exp-header {
     flex-direction: column;
@@ -732,8 +732,8 @@ body.rtl .name-title {
     font-size: 5.5pt;
   }
   .qr-item img {
-    width: 40pt;
-    height: 40pt;
+    width: 48pt;
+    height: 48pt;
     padding: 1pt;
   }
 
