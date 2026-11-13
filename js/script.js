@@ -141,6 +141,13 @@
     if (waLink) waLink.setAttribute('aria-label', t.qrWhatsapp);
     var portfolioLink = document.getElementById('qr-portfolio-link');
     if (portfolioLink) portfolioLink.setAttribute('aria-label', t.qrPortfolio);
+
+    /* PDF download follows the active locale */
+    var pdfLink = document.getElementById('downloadPdf');
+    if (pdfLink) {
+      pdfLink.href = 'assets/cv/cv-' + lang + '.pdf';
+      pdfLink.setAttribute('download', 'Mohamed-Rafaa-Tounekti-CV-' + lang + '.pdf');
+    }
   }
 
   function setText(id, val) {
@@ -184,15 +191,6 @@
       applyLang(this.dataset.lang);
     });
   });
-
-  /* ── Download as PDF ── */
-  var pdfBtn = document.getElementById('downloadPdf');
-  if (pdfBtn) {
-    pdfBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      window.print();
-    });
-  }
 
   /* ── Scroll animations (Intersection Observer) ── */
   function observeFadeIn() {

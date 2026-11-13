@@ -5,15 +5,19 @@
 ## Key architecture
 
 - **`index.html`** — template with `id=` attributes on every translatable element
-- **`js/translations.js`** — single `const i18n = { en: {...}, fr: {...}, ar: {...} }` object
+- **`js/translations.js`** — single `const i18n = { en, fr, ar, pt }` object
 - **`js/script.js`** — IIFE that calls `applyLang(lang)`, which reads `i18n[lang]` and writes DOM via `setText(id, val)`
 - **`css/style.css`** — screen styles + `@media print` at the bottom
 
 ## Adding a translatable text
 
 1. Add `id="some-id"` on the HTML element
-2. Add `someId: "value"` key inside each of the 3 language blocks in `translations.js`
+2. Add `someId: "value"` key inside each of the 4 language blocks in `translations.js`
 3. Add `setText('some-id', t.someId)` in `script.js` inside `applyLang()`
+
+## PDF button
+
+`#downloadPdf` downloads a pre-generated PDF from `assets/cv/cv-<lang>.pdf` (locale is set in `applyLang()`), so no browser print header/footer can appear. After any content change that affects print output, regenerate all four files with headless Chromium `Page.printToPDF` (`displayHeaderFooter: false`, `preferCSSPageSize: true`).
 
 ## Print (PDF) quirks
 
