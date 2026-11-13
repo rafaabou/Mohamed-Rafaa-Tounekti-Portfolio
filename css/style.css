@@ -265,6 +265,41 @@ body.rtl .name-title {
   color: var(--accent-dim);
 }
 
+/* ── QR codes ── */
+.qr-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem 1.2rem;
+  margin: -0.8rem 0 1.8rem; /* pull the codes closer to the contact pill */
+}
+
+.qr-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--contact-border);
+  border-radius: 12px;
+  background: var(--contact-bg);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: background 0.3s, border-color 0.3s, color 0.2s;
+}
+
+.qr-item:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.qr-item img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+}
+
 /* ── 2-column grid ── */
 .grid-2 {
   display: grid;
@@ -609,6 +644,14 @@ body.rtl .name-title {
   .cv-wrapper {
     padding: 1rem;
   }
+  .qr-item {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  .qr-item img {
+    width: 48px;
+    height: 48px;
+  }
   .exp-header {
     flex-direction: column;
     align-items: start;
@@ -670,6 +713,29 @@ body.rtl .name-title {
   }
   .contact-row a, .contact-row span { color: #333; }
   .contact-row i { width: 8pt; color: #555; }
+
+  .qr-strip {
+    display: flex;
+    justify-content: center;
+    gap: 10pt;
+    margin: 0 0 4pt;
+    page-break-inside: avoid;
+  }
+  .qr-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 3pt;
+    padding: 1pt 4pt;
+    border: 0.5pt solid #bbb;
+    border-radius: 4pt;
+    color: #333;
+    font-size: 5.5pt;
+  }
+  .qr-item img {
+    width: 40pt;
+    height: 40pt;
+    padding: 1pt;
+  }
 
   /* float layout so columns break independently */
   .grid-2 {

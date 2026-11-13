@@ -1,6 +1,7 @@
 (function () {
-  /* ── Current language ── */
-  let currentLang = localStorage.getItem('cv-lang') || 'en';
+  /* ── Current language (pt-BR by default, explicit choice wins) ── */
+  var storedLang = localStorage.getItem('cv-lang');
+  let currentLang = i18n[storedLang] ? storedLang : 'pt';
 
   /* ── I18n: apply translations to DOM ── */
   function applyLang(lang) {
@@ -11,7 +12,7 @@
     if (!t) return;
 
     /* html lang + direction */
-    document.documentElement.lang = lang === 'ar' ? 'ar' : lang;
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.body.classList.toggle('rtl', lang === 'ar');
 
@@ -132,6 +133,14 @@
 
     /* footer */
     setText('footer-text', t.footer);
+
+    /* QR codes */
+    setText('qr-whatsapp-label', t.qrWhatsapp);
+    setText('qr-portfolio-label', t.qrPortfolio);
+    var waLink = document.getElementById('qr-whatsapp-link');
+    if (waLink) waLink.setAttribute('aria-label', t.qrWhatsapp);
+    var portfolioLink = document.getElementById('qr-portfolio-link');
+    if (portfolioLink) portfolioLink.setAttribute('aria-label', t.qrPortfolio);
   }
 
   function setText(id, val) {

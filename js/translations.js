@@ -132,8 +132,10 @@ const i18n = {
         tech: TECH[3]
       }
     ],
-    locationText: "Tunis, Tunisie",
-    footer: "AI-assisted log analysis · incident triage · infrastructure diagnostics · MCP servers"
+    locationText: "Bela Vista, São Paulo – Brazil",
+    footer: "AI-assisted log analysis · incident triage · infrastructure diagnostics · MCP servers",
+    qrWhatsapp: "WhatsApp",
+    qrPortfolio: "Portfolio"
   },
 
   fr: {
@@ -262,8 +264,10 @@ const i18n = {
         tech: TECH[3]
       }
     ],
-    locationText: "Tunis, Tunisie",
-    footer: "Analyse de logs assistée par IA · triage d'incidents · diagnostic d'infrastructure · serveurs MCP"
+    locationText: "Bela Vista, São Paulo – Brésil",
+    footer: "Analyse de logs assistée par IA · triage d'incidents · diagnostic d'infrastructure · serveurs MCP",
+    qrWhatsapp: "WhatsApp",
+    qrPortfolio: "Portfolio"
   },
 
   ar: {
@@ -392,7 +396,141 @@ const i18n = {
         tech: TECH[3]
       }
     ],
-    locationText: "تونس، تونس العاصمة",
-    footer: "تحليل السجلات بمساعدة الذكاء الاصطناعي · فرز الحوادث · تشخيص البنية التحتية · خوادم MCP"
+    locationText: "بيلا فيستا، ساو باولو – البرازيل",
+    footer: "تحليل السجلات بمساعدة الذكاء الاصطناعي · فرز الحوادث · تشخيص البنية التحتية · خوادم MCP",
+    qrWhatsapp: "واتساب",
+    qrPortfolio: "ملف الأعمال"
+  },
+
+  pt: {
+    lang: "PT",
+    nameText: "Mohamed Rafaa TOUNEKTI",
+    badge: "DevOps & DevSecOps",
+    themeDark: "Escuro", themeLight: "Claro", downloadPdf: "PDF",
+    profile: "Perfil",
+    profileText: "Engenheiro DevOps e DevSecOps focado na construção de pipelines CI/CD confiáveis, na segurança de clusters Kubernetes e na automação de infraestrutura em escala. Atuo com AWS, sistemas Linux e ambientes conteinerizados, com experiência aprofundada em GitLab CI/CD, Terraform, Ansible e stacks de monitoramento.",
+    technicalSkills: "Competências Técnicas",
+    cloud: "Cloud", containers: "Contêineres & Orquestração", cicd: "CI/CD & GitOps", iac: "Infraestrutura como Código",
+    security: "Segurança", monitoring: "Monitoramento & Logging",
+    networking: "Redes · Scripts · Banco de Dados · Armazenamento",
+    virt: "Virtualização · Ferramentas de IA",
+    languages: "Idiomas",
+    langArabic: "Árabe", langArabicLevel: "Nativo",
+    langFrench: "Francês", langFrenchLevel: "Profissional",
+    langEnglish: "Inglês", langEnglishLevel: "Profissional",
+    achievements: "Principais Conquistas",
+    ach: [
+      "Arquitetura de segurança zero-trust no Kubernetes",
+      "Escaneamento automatizado de segurança nos pipelines CI/CD",
+      "GitOps com ArgoCD & Flux CD",
+      "Alta disponibilidade com PDB e escalonamento automático",
+      "Stack completa de monitoramento e alertas"
+    ],
+    education: "Formação",
+    edu: [
+      { title: "Bacharelado", desc: "Tecnologia da Informação (Redes e Serviços de Computação)", meta: "I.S.E.T. · 2011 – 2014" },
+      { title: "Ensino Médio", desc: "Ciência da Computação", meta: "2010 – 2011" }
+    ],
+    exp: [
+      {
+        role: "Engenheiro DevOps & DevSecOps",
+        company: "TUNISIE SOFTWARE FACTORY & BE-SOFTILYS",
+        period: "Jun 2025 – Out 2024",
+        bullets: [
+          "Construí pipelines GitLab CI/CD com escaneamento Trivy, GitLeaks e Semgrep. Imagens vulneráveis bloqueadas antes do staging",
+          "Implantei segurança zero-trust nos clusters Kubernetes com Istio mTLS, NetworkPolicies e OPA Gatekeeper",
+          "Integrei o HashiCorp Vault aos fluxos de implantação com rotação automática de segredos via External Secrets Operator",
+          "Configurei dashboards Prometheus & Grafana com roteamento pelo Alertmanager; MTTR caiu significativamente",
+          "Configurei HPA e PodDisruptionBudgets para suportar picos de tráfego sem perder requisições",
+          "Automatizei o provisionamento de certificados TLS com Cert-Manager para todos os recursos de ingress",
+          "Executei testes de validação de infraestrutura de ponta a ponta após cada ciclo de provisionamento; detectei desvios antes da produção",
+          "Apliquei gates de segurança no CI/CD com limites de vulnerabilidade; pipelines falhavam quando os limites eram excedidos",
+          "Centralizei o rastreamento de vulnerabilidades no DefectDojo para acompanhar a remediação",
+          "Depurei problemas de runtime no Kubernetes — CrashLoopBackOff, ImagePullBackOff, falhas de agendamento",
+          "Escrevi runbooks e documentação de implantação; relatórios de validação mantiveram o histórico",
+          "Participei de discussões pré-venda com clientes potenciais sobre opções de arquitetura",
+          "Configurei servidores MCP para assistentes de IA consultarem dados de Kubernetes, CI/CD e monitoramento",
+          "Incorporei assistentes de IA aos fluxos diários para análise de logs, triagem de incidentes e diagnóstico",
+          "Usei ferramentas de IA para acelerar o desenvolvimento em Terraform e Ansible; menos erros de configuração",
+          "Criei regras de proteção de branch com revisões obrigatórias e verificações automatizadas de pipeline",
+          "Conectei o Alertmanager ao Jira; alertas geram tickets de serviço automaticamente",
+          "Segurança da cadeia de suprimentos: geração de SBOM, assinatura de imagens com Cosign e rastreamento de dependências",
+          "Implantei o Falco para segurança em runtime nas cargas de trabalho Kubernetes"
+        ],
+        tech: TECH[0]
+      },
+      {
+        role: "Engenheiro DevOps",
+        company: "DOPIFY SOFTWARE & TECHNOLOGIES",
+        period: "Abr 2024 – Jan 2024",
+        bullets: [
+          "Projetei pipelines CI/CD para várias equipes com SAST, SCA e escaneamento de segredos em cada build",
+          "Automatizei o provisionamento de servidores em dev, staging e produção com Ansible; eliminei desvios manuais",
+          "Configurei o Flux CD para infraestrutura orientada a GitOps; ambientes declarativos e auditáveis",
+          "Implantei o Grafana Loki para agregação centralizada de logs; análise de causa raiz mais rápida",
+          "Implantações sem downtime com estratégias blue-green e canary usando overlays Kustomize",
+          "Configurei o Nginx Ingress Controller com terminação TLS para roteamento externo",
+          "Provisionei runners GitLab auto-hospedados com executor Docker; filas de CI diminuíram",
+          "O Alertmanager encaminhou incidentes para Slack e e-mail; as pessoas certas acionadas no momento certo",
+          "Automatizei scripts de teste para validar o estado da infraestrutura após o provisionamento",
+          "Gerenciei a governança dos pipelines e o planejamento de cutover para releases de produção",
+          "Rastreei degradação de desempenho por meio de logs de sistema e aplicação",
+          "Documentei a arquitetura de infraestrutura, procedimentos de implantação e problemas conhecidos",
+          "Proteção de branches Git com revisões obrigatórias e status checks; gates de qualidade antes do merge"
+        ],
+        tech: TECH[1]
+      },
+      {
+        role: "Engenheiro DevOps",
+        company: "GEO-TRACKING GROUP",
+        period: "Out 2023 – Abr 2022",
+        bullets: [
+          "Reconstruí pipelines CI/CD; tempo de implantação de dias para horas em mais de 15 microsserviços",
+          "Reduzi o tamanho das imagens Docker em 60% com builds multi-stage; tempos de pull e custos de armazenamento caíram",
+          "Provisionei infraestrutura AWS com módulos Terraform; versionada e reproduzível",
+          "Integrei o SonarQube para verificações automatizadas de qualidade de código e acompanhamento de débito técnico",
+          "Escrevi regras de alerta no Prometheus para detecção proativa; quedas não planejadas caíram 40%",
+          "Automatizei atualizações de dependências e patches de segurança via GitOps em mais de 200 dependências",
+          "Gerenciei imagens Docker e manifests Kubernetes no Nexus como fonte única de verdade",
+          "Automatizei rotinas de backup de banco de dados com recuperação point-in-time para PostgreSQL e MySQL",
+          "Reforcei a segurança dos pods com SecurityContext e segmentação de rede via IPTables/UFW",
+          "Criei bibliotecas compartilhadas do Jenkins reutilizáveis para padronizar templates de pipeline",
+          "Executei testes de instalação e upgrade; documentei resultados e sinalizei desvios",
+          "Monitorei capacidade de armazenamento e métricas de desempenho; ajustei configurações para disponibilidade",
+          "Respondi a incidentes e escrevi relatórios pós-incidente com etapas de remediação",
+          "Integrei o LDAP para autenticação centralizada"
+        ],
+        tech: TECH[2]
+      },
+      {
+        role: "Administrador de Sistemas",
+        company: "DIVERSAS ORGANIZAÇÕES",
+        period: "Jan 2022 – Fev 2016",
+        bullets: [
+          "Administrei servidores Linux (RHEL, Ubuntu, Debian) — patches, atualizações de segurança e tuning",
+          "Automatizei o provisionamento de VMs com Ansible; tempo de configuração de novos ambientes diminuiu",
+          "Administrei roteadores, switches e firewalls; mantive políticas de rede",
+          "Configurei compartilhamento de arquivos NFS para acesso centralizado ao armazenamento entre equipes",
+          "Configurei DNS, DHCP e serviços de rede internos",
+          "Projetei e testei procedimentos de recuperação de desastres com validação regular de backups",
+          "Administrei MySQL e PostgreSQL — backup, recuperação e otimização de desempenho",
+          "Configurei regras de firewall IPTables e UFW para segmentar a rede e restringir acessos",
+          "Implantei servidores web Apache e Nginx para aplicações internas e externas",
+          "Integrei o Active Directory para autenticação centralizada em Linux/Windows",
+          "Gerenciei contas de usuários, chaves SSH e políticas de sudo em ambientes corporativos",
+          "Prestei suporte L2/L3 com análise de causa raiz",
+          "Auxiliei usuários finais com problemas de hardware, software e rede; conduzi treinamentos",
+          "Mantive a documentação de processos de TI, configurações de rede e troubleshooting",
+          "Configurei sistemas de armazenamento sobre IPv4 com endereçamento e roteamento adequados",
+          "Trabalhei com equipes técnicas para planejar melhorias de infraestrutura e automação",
+          "Automatizei fluxos de alerta para ticket com resolução gerenciada por SLA"
+        ],
+        tech: TECH[3]
+      }
+    ],
+    locationText: "Bela Vista, São Paulo – Brasil",
+    footer: "Análise de logs assistida por IA · triagem de incidentes · diagnóstico de infraestrutura · servidores MCP",
+    qrWhatsapp: "WhatsApp",
+    qrPortfolio: "Portfólio"
   }
 };
