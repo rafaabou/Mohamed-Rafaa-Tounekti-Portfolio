@@ -190,10 +190,7 @@
   if (pdfBtn) {
     pdfBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      var origTitle = document.title;
-      document.title = 'Mohamed_Rafaa_Tounekti_CV';
       window.print();
-      setTimeout(function () { document.title = origTitle; }, 100);
     });
   }
 
